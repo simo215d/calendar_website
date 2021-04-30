@@ -1,14 +1,14 @@
 # Hvad har jeg lavet
 
 Projektet er langt fra færdigt, men jeg har allerede brugt langt mere end 10 timer, så dette er så langt jeg nåede. <br>
-Hjemmesiden er lavet med php frameworket laravel.
-Det er en slags kalender hvor man kan tilføje opgaver til ugen.
-Man opretter en bruger og logger ind.
-Hjemmesiden kan kun vise 1 uge (jeg havde ikke tid til at implementere forskellige uger/måneder/år)
-Man kan få vist alle opgaver i kalenderen
-Man kan tilføje opgaver.
-Man kan markere opgaver og slette dem.
-Jeg mangler at man kan redigere opgaver.
+Hjemmesiden er lavet med php frameworket laravel.<br>
+Det er en slags kalender hvor man kan tilføje opgaver til ugen.<br>
+Man opretter en bruger og logger ind.<br>
+Hjemmesiden kan kun vise 1 uge (jeg havde ikke tid til at implementere forskellige uger/måneder/år)<br>
+Man kan få vist alle opgaver i kalenderen<br>
+Man kan tilføje opgaver.<br>
+Man kan markere opgaver og slette dem.<br>
+Jeg mangler at man kan redigere opgaver.<br>
 
 ## Hvordan har jeg lavet det
 
@@ -52,7 +52,7 @@ Route::get('/home.store', [App\Http\Controllers\HomeController::class, 'store'])
 Route::get('/home.destroy', [App\Http\Controllers\HomeController::class, 'destroy'])->name('home.destroy');
 ```
 
-Inde i calendar/app/Http/Controllers/HomeController.php bliver requests håndteret
+Inde i calendar/app/Http/Controllers/HomeController.php bliver requests håndteret<br>
 For eksempelt så bliver min store/create håndteret således:
 ```php
 public function store(Request $request)
