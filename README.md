@@ -1,6 +1,6 @@
 # Hvad har jeg lavet
 
-Projektet er langt fra færdigt, men jeg har allerede brugt mere en 10 timer, så dette er så langt jeg nåede.
+Projektet er langt fra færdigt, men jeg har allerede brugt langt mere end 10 timer, så dette er så langt jeg nåede.
 Hjemmesiden er lavet med php frameworket laravel.
 Det er en slags kalender hvor man kan tilføje opgaver til ugen.
 Man opretter en bruger og logger ind.
