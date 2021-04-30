@@ -9,6 +9,8 @@ Man kan få vist alle opgaver i kalenderen<br>
 Man kan tilføje opgaver.<br>
 Man kan markere opgaver og slette dem.<br>
 Jeg mangler at man kan redigere opgaver.<br>
+<img width="1436" alt="Screenshot 2021-04-30 at 19 49 23" src="https://user-images.githubusercontent.com/54975711/116734054-36671280-a9ed-11eb-94c6-435ebf07de65.png">
+
 
 ## Hvordan har jeg lavet det
 
