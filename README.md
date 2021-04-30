@@ -13,31 +13,48 @@ Jeg mangler at man kan redigere opgaver.
 Hvordan har jeg lavet det
 
 Jeg bruger composer (en slags package manager til php) til at hente en frisk laravel projekt
+```
 composer create-project laravel/laravel calendar
+```
 laravel har et authentication pakke vi kan bruge som hedder ui
+```
 composer require laravel/ui
+```
 jeg ville ikke bruge et framework, men man skal åbentbart vælge en af dem tror jeg
+```
 php artisan ui bootstrap --auth
 npm install
 npm run dev
+```
 nu er der nogle modeller og frontend til loginsysten, så nu skal .env sættes til vores database og vi kan nu migrere
+```
 php artisan migrate
+```
 Til mine opgaver laver jeg en table der hedder tasks
+```
 php artisan make:migration create_tasks_table --create=tasks
 php artisan migrate
+```
 jeg skal også have en model til task så jeg ikke behøver at lave sql statements men bare kan kalde metoder på modellen i stedet. Jeg laver også en controller her, som jeg kunne bruge til at håndtere crud, men jeg lavede mine crud i calendar/app/Http/Controllers/HomeController.php
+```
 php artisan make:controller TaskController --resource --model=Task
+```
 Jeg havde glemt at have en kolonne som holdte styr på hvilken dag opgaven tilhørte så jeg laver en ekstra migration
+```
 php artisan make:migration add_day_to_tasks_table --table=tasks
 php artisan migrate
+```
 
 Inde i calendar/routes/web.php definere jeg hvilke routes jeg vil have
+```php
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home.store', [App\Http\Controllers\HomeController::class, 'store'])->name('home.store');
 Route::get('/home.destroy', [App\Http\Controllers\HomeController::class, 'destroy'])->name('home.destroy');
+```
 
 Inde i calendar/app/Http/Controllers/HomeController.php bliver requests håndteret
 For eksempelt så bliver min store/create håndteret således:
+```php
 public function store(Request $request)
 {
     //since I in my html need to calculate how big the div containing the task and its 
@@ -55,6 +72,7 @@ public function store(Request $request)
     //to refresh the page since new data is in database
     return redirect()->route('home');
 }
+```
 
 I denne fil viser jeg mine tasks calendar/resources/views/home.blade.php men den er lidt kompliceret med noget php matematik og loops med både blade og php for at korrekt vise de tasks der tilhøre de forskellige dage med den rigtige placering og størrelse.
 Dog er min tidbereging omrking 3 minutter ved siden af, men jeg kunne ikke helt gennemskue hvorfor.
