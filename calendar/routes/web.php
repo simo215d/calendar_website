@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home.store', [App\Http\Controllers\HomeController::class, 'store'])->name('home.store');
-Route::post('/home.destroy', [App\Http\Controllers\HomeController::class, 'destroy'])->name('home.destroy');
+Route::get('/home.destroy', [App\Http\Controllers\HomeController::class, 'destroy'])->name('home.destroy');
