@@ -22,7 +22,7 @@ laravel har et authentication pakke vi kan bruge som hedder ui
 ```
 composer require laravel/ui
 ```
-jeg ville ikke bruge et framework, men man skal åbentbart vælge en af dem tror jeg
+jeg ville ikke bruge et framework, men man skal åbentbart vælge en af dem tror jeg, så jeg tog bare bootstrap
 ```
 php artisan ui bootstrap --auth
 npm install
