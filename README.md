@@ -1,4 +1,4 @@
-Hvad har jeg lavet
+# Hvad har jeg lavet
 
 Projektet er langt fra færdigt, men jeg har allerede brugt mere en 10 timer, så dette er så langt jeg nåede.
 Hjemmesiden er lavet med php frameworket laravel.
@@ -10,7 +10,7 @@ Man kan tilføje opgaver.
 Man kan markere opgaver og slette dem.
 Jeg mangler at man kan redigere opgaver.
 
-Hvordan har jeg lavet det
+## Hvordan har jeg lavet det
 
 Jeg bruger composer (en slags package manager til php) til at hente en frisk laravel projekt
 ```
