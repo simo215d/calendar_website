@@ -76,5 +76,7 @@ public function store(Request $request)
 }
 ```
 
-I denne fil viser jeg mine tasks calendar/resources/views/home.blade.php men den er lidt kompliceret med noget php matematik og loops med både blade og php for at korrekt vise de tasks der tilhøre de forskellige dage med den rigtige placering og størrelse.
+I denne fil viser jeg mine tasks <br>
+calendar/resources/views/home.blade.php <br>
+men den er lidt kompliceret med noget php matematik og loops med både blade og php for at korrekt vise de tasks der tilhøre de forskellige dage med den rigtige placering og størrelse.
 Dog er min tidbereging omrking 3 minutter ved siden af, men jeg kunne ikke helt gennemskue hvorfor.
